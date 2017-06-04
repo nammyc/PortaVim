@@ -23,14 +23,14 @@ call dein#begin('~/.config/nvim/bundle')
 call dein#add('~/.config/nvim/bundle/repos/github.com/Shougo/dein.vim')
 
 " Add plugins below
-call dein#add('Shougo/deoplete.nvim', {'build': 'vim -s +"silent call dein#remote_plugins()"'})
+call dein#add('Shougo/deoplete.nvim', {'build': 'vim -s +"call dein#remote_plugins()"'})
 
 " Add plugins above
 
 call dein#end()
 
-if (silent call dein#check_install()) 
-	silent call dein#update()
+if dein#check_install() 
+	call dein#update()
 endif
 
 filetype plugin indent on
