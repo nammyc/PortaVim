@@ -13,7 +13,6 @@ if !filereadable(expand('~/.config/nvim/bundle/repos/github.com/Shougo/dein.vim/
   silent !git clone https://github.com/Shougo/dein.vim ~/.config/nvim/bundle/repos/github.com/Shougo/dein.vim/
   silent !cd ~/.config/nvim/bundle/repos/github.com/Shougo/dein.vim/
   silent !sh ./installer.sh ~/.config/nvim/bundle
-  let dein_readme='none'
   echo "Dein install completed."
 endif
 " End Dein installation--------------------
