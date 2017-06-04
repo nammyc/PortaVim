@@ -3,7 +3,7 @@ set nocompatible
 " Vim-Plug Scripts-------------------------
 
 " Vim-Plug installation--------------------
-if !filereadable(expand('~\vimfiles\autoload'))
+if !filereadable(expand('~\vimfiles\autoload\plug.vim')) && !filereadable(expand('~/.vim/autoload/plug.vim'))
   echo "Installing Vim-Plug..."
   echo ""
   if has('win32') || has('win32unix') || has('win64') || has('win16')
